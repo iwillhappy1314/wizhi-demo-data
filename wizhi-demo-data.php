@@ -70,6 +70,9 @@ function demo_posts_options() {
 				'post',
 				'prod',
 				'case',
+				'corp',
+				'team',
+				'download',
 			];
 
 			$i = 1;
