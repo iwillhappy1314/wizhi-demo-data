@@ -27,7 +27,7 @@ function demo_posts_options() {
 		<div class="wrap">
 			<h2 id="">添加 WordPress 测试数据</h2>
 
-			<?php if ( $_GET[ "add_bundle" ] == true ) { ?>
+			<?php if ( $_POST[ "add_bundle" ] == true ) { ?>
 				<div class="updated below-h2" id="message">
 					<p>测试数据已添加</p>
 				</div>
@@ -48,8 +48,25 @@ function demo_posts_options() {
 				<li>带链接的文章</li>
 				<li>带有从 H1 到 H5 标题的文章</li>
 			</ol>
-			<a href="?page=wizhi-demo-data&amp;add_bundle=true" class="button">添加测试数据</a>
-			<br><br><br>
+
+			<p><strong>需要添加的文章类型: </strong></p>
+			<?php
+			$args_type = [
+				'public'   => true,
+				'_builtin' => false,
+			];
+
+			$post_types = get_post_types( $args_type, 'objects' );
+			?>
+
+			<form action="?page=wizhi-demo-data" method="post">
+				<?php foreach ( $post_types as $post_type ) { ?>
+					<input type="checkbox" checked name="post_types[]" value="<?php echo $post_type->name; ?>"><?php echo $post_type->label; ?><br>
+				<?php } ?>
+				<br>
+				<input type="hidden" name="add_bundle" value="1">
+				<input type="submit" value="添加测试数据" class="button button-primary">
+			</form>
 
 			<h3 id="">删除测试数据</h3>
 			<p>点击下面的按钮, 删除所有测试数据</p>
@@ -59,21 +76,14 @@ function demo_posts_options() {
 		<?php
 
 		// 添加数据
-		if ( $_GET[ "add_bundle" ] == true ) {
+		if ( $_POST[ "add_bundle" ] == 1 ) {
 			global $wpdb;
 
 			// 获取所有数据,然后插入数据库
 			include 'content.php';
 
 			// 需要添加测试数据的自定义文章类型
-			$post_types = [
-				'post',
-				'prod',
-				'case',
-				'corp',
-				'team',
-				'download',
-			];
+			$post_types = isset( $_POST[ 'post_types' ] ) ? $_POST[ 'post_types' ] : [ 'post', 'page' ];
 
 			$i = 1;
 
