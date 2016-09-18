@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4595a3c-cc67-4f36-846a-9d1f23022990" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wizhi-demo-data.php" afterPath="$PROJECT_DIR$/wizhi-demo-data.php" />
     </list>
     <ignored path="wizhi-demo-data.iws" />
@@ -27,13 +27,13 @@
       <file leaf-file-name="wizhi-demo-data.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wizhi-demo-data.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="658">
+              <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
               <folding>
                 <element signature="e#6#182#0#PHP" expanded="true" />
-                <marker date="1474181461000" expanded="true" signature="1009:1150" ph="..." />
-                <marker date="1474181461000" expanded="true" signature="3587:3659" ph="SELECT ID FR... wp_base_prefixposts" />
-                <marker date="1474181461000" expanded="true" signature="4146:4231" ph="SELECT ID FR... wp_base_prefixposts" />
+                <marker date="1474181537000" expanded="true" signature="1009:1150" ph="..." />
+                <marker date="1474181537000" expanded="true" signature="3737:3809" ph="SELECT ID FR... wp_base_prefixposts" />
+                <marker date="1474181537000" expanded="true" signature="4296:4381" ph="SELECT ID FR... wp_base_prefixposts" />
               </folding>
             </state>
           </provider>
@@ -134,12 +134,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474180475445</updated>
-      <workItem from="1474180476797" duration="947000" />
+      <workItem from="1474180476797" duration="1023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="947000" />
+    <option name="totallyTimeSpent" value="1023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="38" y="23" width="1882" height="1177" extended-state="6" />
@@ -185,13 +185,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wizhi-demo-data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="658">
+          <caret line="63" column="82" selection-start-line="63" selection-start-column="82" selection-end-line="63" selection-end-column="82" />
           <folding>
             <element signature="e#6#182#0#PHP" expanded="true" />
-            <marker date="1474181461000" expanded="true" signature="1009:1150" ph="..." />
-            <marker date="1474181461000" expanded="true" signature="3587:3659" ph="SELECT ID FR... wp_base_prefixposts" />
-            <marker date="1474181461000" expanded="true" signature="4146:4231" ph="SELECT ID FR... wp_base_prefixposts" />
+            <marker date="1474181537000" expanded="true" signature="1009:1150" ph="..." />
+            <marker date="1474181537000" expanded="true" signature="3737:3809" ph="SELECT ID FR... wp_base_prefixposts" />
+            <marker date="1474181537000" expanded="true" signature="4296:4381" ph="SELECT ID FR... wp_base_prefixposts" />
           </folding>
         </state>
       </provider>

@@ -60,6 +60,8 @@ function demo_posts_options() {
 			?>
 
 			<form action="?page=wizhi-demo-data" method="post">
+				<input type="checkbox" checked name="post_types[]" value="post">文章<br>
+				<input type="checkbox" checked name="post_types[]" value="page">页面<br>
 				<?php foreach ( $post_types as $post_type ) { ?>
 					<input type="checkbox" checked name="post_types[]" value="<?php echo $post_type->name; ?>"><?php echo $post_type->label; ?><br>
 				<?php } ?>
