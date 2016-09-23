@@ -129,22 +129,24 @@ function demo_posts_options() {
 
 			};
 
-			// 添加页面
-			foreach ( $add_pages_array as $page ) {
-				include 'content.php';
-				$page_id = wp_insert_post( $page );
-			};
+			if(in_array('page', $post_types)){
+				// 添加页面
+				foreach ( $add_pages_array as $page ) {
+					include 'content.php';
+					$page_id = wp_insert_post( $page );
+				};
 
-			// 添加子页面
-			$parent_about = $wpdb->get_results( "SELECT ID FROM " . $wpdb->base_prefix . "posts WHERE post_name = 'about'" );
+				// 添加子页面
+				$parent_about = $wpdb->get_results( "SELECT ID FROM " . $wpdb->base_prefix . "posts WHERE post_name = 'about'" );
 
-			foreach ( $parent_about as $page_about ) {
-				$parent_about_id = $page_about->ID;
-				include 'content.php';
-				wp_insert_post( $child_about_about );
-				wp_insert_post( $child_about_culture );
-				wp_insert_post( $child_about_honor );
-			};
+				foreach ( $parent_about as $page_about ) {
+					$parent_about_id = $page_about->ID;
+					include 'content.php';
+					wp_insert_post( $child_about_about );
+					wp_insert_post( $child_about_culture );
+					wp_insert_post( $child_about_honor );
+				};
+			}
 
 		};
 
