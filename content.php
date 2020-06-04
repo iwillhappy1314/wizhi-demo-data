@@ -123,5 +123,3 @@ $remove_posts_array = [
 	$child_about_culture,
 	$child_about_honor,
 ];
-
-?>
