@@ -5,7 +5,7 @@
 
 // 多段文章
 $post_normal = [
-	'post_title'   => '测试从文件中读取数据',
+	'post_title'   => '我们可以直接从文本文件中获取数据来进行一些测试',
 	'post_name'   => 'post-normal',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-normal.html', true ),
 	'post_status'  => 'publish',
@@ -13,7 +13,7 @@ $post_normal = [
 
 // 带链接的文章
 $post_link = [
-	'post_title'   => '谷歌专利使无人驾驶汽车安全得多',
+	'post_title'   => '谷歌专利使无人驾驶汽车安全得多，如果能普及，无人驾驶将比人类驾驶安全很多',
 	'post_name'   => 'post-link',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-link.html', true ),
 	'post_status'  => 'publish',
@@ -29,7 +29,7 @@ $post_image = [
 
 // 带列表的文章
 $post_list = [
-	'post_title'   => 'Adobe研发Win10通用应用程序 手机电脑都能用',
+	'post_title'   => 'Adobe研发Win10通用应用程序，手机平板电脑都能用',
 	'post_name'   => 'post-list',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-list.html', true ),
 	'post_status'  => 'publish',
@@ -37,7 +37,7 @@ $post_list = [
 
 // 带引用的文章
 $post_quote = [
-	'post_title'   => '薛定谔猫能同时同处两地',
+	'post_title'   => '从多重宇宙观点解释薛定谔猫能同时同处两地',
 	'post_name'   => 'post-quote',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-quote.html', true ),
 	'post_status'  => 'publish',
@@ -45,7 +45,7 @@ $post_quote = [
 
 // 带表格的文章
 $post_table = [
-	'post_title'   => '优步的动态定价策略是抢钱吗？',
+	'post_title'   => '优步的动态定价策略是抢钱还是优化资源配置？',
 	'post_name'   => 'post-table',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-table.html', true ),
 	'post_status'  => 'publish',
