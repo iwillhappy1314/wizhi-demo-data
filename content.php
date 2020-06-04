@@ -45,7 +45,7 @@ $post_quote = [
 
 // 带表格的文章
 $post_table = [
-	'post_title'   => '【经济学人】优步的动态定价策略是抢钱吗？',
+	'post_title'   => '优步的动态定价策略是抢钱吗？',
 	'post_name'   => 'post-table',
 	'post_content' => file_get_contents( WIZHI_DEMO_DATA . 'data/post-table.html', true ),
 	'post_status'  => 'publish',
