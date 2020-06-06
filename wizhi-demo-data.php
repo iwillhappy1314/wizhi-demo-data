@@ -31,12 +31,11 @@ function demo_posts_options() {
 				<div class="updated below-h2" id="message">
 					<p>测试数据已添加</p>
 				</div>
-			<?php } elseif ( $_GET[ "remove_all" ] == true ) {
-				; ?>
+			<?php } elseif ( $_GET[ "remove_all" ] == true ) {?>
 				<div class="updated below-h2" id="message">
 					<p>所有测试数据已移除</p>
 				</div>
-			<?php }; // endif ?>
+			<?php }?>
 
 			<h3 id="">添加测试数据</h3>
 			<p>目前, 我们可以添加以下几种类型的测试数据。</p>
@@ -50,6 +49,7 @@ function demo_posts_options() {
 			</ol>
 
 			<p><strong>需要添加的文章类型: </strong></p>
+
 			<?php
 			$args_type = [
 				'public'   => true,
